@@ -1,0 +1,12 @@
+{
+  "namespace": "com.thedevlair.business.orders.service.orders.model",
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "date", "type": "string"},
+    {"name": "customerId", "type": "string"},
+    {"name": "productId", "type": "string"}
+    // Añade otros campos según sea necesario
+  ]
+}
