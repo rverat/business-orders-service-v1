@@ -7,6 +7,5 @@
     {"name": "date", "type": "string"},
     {"name": "customerId", "type": "string"},
     {"name": "productId", "type": "string"}
-    // Añade otros campos según sea necesario
   ]
 }
