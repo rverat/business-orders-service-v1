@@ -1,6 +1,6 @@
 package com.thedevlair.business.orders.service.web;
 
-import com.thedevlair.business.orders.service.orders.model.Order;
+import com.thedevlair.apache.avro.model.Order;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
@@ -10,8 +10,8 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/v1/api/orders")
 public class OrderController {
 
-    private final KafkaTemplate<String, Order> kafkaTemplate;
     private static final String TOPIC = "order";
+    private final KafkaTemplate<String, Order> kafkaTemplate;
 
     public OrderController(KafkaTemplate<String, Order> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;

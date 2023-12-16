@@ -2,15 +2,17 @@ server:
   port: 8082
 
 spring:
+  banner:
+    location: classpath:banner.txt
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: localhost:9092 #kafka server
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       properties:
         schema.registry.url: http://0.0.0.0:8081
   schema-registry:
-    url: http://0.0.0.0:8081
+    url: http://0.0.0.0:8081 #Screma registry server
 
 logging:
   level:

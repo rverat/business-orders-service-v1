@@ -1,11 +1,23 @@
 {
-  "namespace": "com.thedevlair.business.orders.service.orders.model",
+  "namespace": "com.thedevlair.apache.avro.model",
   "type": "record",
   "name": "Order",
   "fields": [
-    {"name": "id", "type": "string"},
-    {"name": "date", "type": "string"},
-    {"name": "customerId", "type": "string"},
-    {"name": "productId", "type": "string"}
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "type": "string"
+    },
+    {
+      "name": "customerId",
+      "type": "string"
+    },
+    {
+      "name": "productId",
+      "type": "string"
+    }
   ]
 }
